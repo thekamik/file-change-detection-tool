@@ -1,15 +1,22 @@
-# file-change-detection-tool
-Tool to detect changes in files in a simple way. It can be used to analyze malware or detect unauthorized modifications.
+# File Change Detection Tool
 
-usage: mdt.py [-h] [-n] [-a] [-o ONE] [-s] [-d DIR] [-r REMOVE]
+A lightweight tool designed to detect modifications in files with simplicity. Ideal for analyzing malware or identifying unauthorized alterations.
 
-file checking tool by Kamil Kuczera
+## Usage
 
-options:                          descriptions:
-  -h, --help                      show this help message and exit
-  -n, --new                       create new database (python mdt.py -new)
-  -a, --all                       save all changes in database (python mdt.py -all)
-  -o ONE, --one ONE               save one file in database (python mdt.py -one [file_path])
-  -s, --scan                      scan all directories in database (python mdt.py -scan)
-  -d DIR, --dir DIR               add new path to a database (python mdt.py -dir [dir_path])
-  -r REMOVE, --remove REMOVE      remove path from database (python mdt.py -remove [dir_path])
+```bash
+mdt.py [-h] [-n] [-a] [-o ONE] [-s] [-d DIR] [-r REMOVE]
+```
+
+## Features
+
+- **Create New Database**: `-n`, `--new` option to initiate a new database.
+- **Save All Changes**: `-a`, `--all` option to store all changes in the database.
+- **Save Single File**: `-o ONE`, `--one ONE` option to save a single file in the database (`python mdt.py -one [file_path]`).
+- **Scan Directories**: `-s`, `--scan` option to scan all directories in the database (`python mdt.py -scan`).
+- **Add Directory Path**: `-d DIR`, `--dir DIR` option to add a new path to the database (`python mdt.py -dir [dir_path]`).
+- **Remove Directory Path**: `-r REMOVE`, `--remove REMOVE` option to remove a path from the database (`python mdt.py -remove [dir_path]`).
+
+## Author
+
+File checking tool developed by Kamil Kuczera.
